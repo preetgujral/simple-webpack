@@ -4,5 +4,13 @@ module.exports = {
     path: __dirname,
     filename: './bundle.js',
   },
+  module: {
+    loaders: [
+      {
+        test: /\.css$/,
+        loader: 'style!css'
+      }
+    ]
+  }
 };
 
